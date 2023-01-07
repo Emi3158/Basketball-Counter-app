@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <script defer src="index.js"></script>
+    <title>Basketball Counter</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <h3 class="team">HOME</h3>
+            <div class="content__container-home">
+                <p class="score" id="score-home">0<p>
+            </div>
+        </div>
+        <div>
+        <h3 class="team">GUEST</h3>
+            <div class="content__container-guest">
+                <p class="score" id="score-guest">0<p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons__container">
+        <div class="buttons">
+            <button onclick="buttonClickHome1()" id="btn__+1"><span class="score__text">+1</span></button>
+            <button onclick="buttonClickHome3()"><span class="score__text">+3</span></button>
+            <button onclick="buttonClickHome5()"><span class="score__text">+5</span></button>
+        </div>
+        <div class="buttons">
+            <button onclick="buttonClickGuest1()"><span class="score__text">+1</span></button>
+            <button onclick="buttonClickGuest3()"><span class="score__text">+3</span></button>
+            <button onclick="buttonClickGuest5()"><span class="score__text">+5</span></button>
+        </div>
+    </div>
+    <button onclick="resetScore()" class="reset__btn" id="reset-btn"><span class="reset__btn-text">RESET</span></button>
+    <script src="index.js"></script>
+</body>
+</html>
